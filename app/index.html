@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>了如指掌商户管理端</title>
+  <meta name="description" content="了如指掌">
+  <meta name="keywords" content="gallery">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="icon" type="image/png" href="assets/i/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/i/app-icon72x72@2x.png">
+  <meta name="apple-mobile-web-app-title" content="了如指掌" />
+  <link rel="stylesheet" href="../static/css/amazeui.css"/>
+  <link rel="stylesheet" href="../static/css/admin.css">
+
+</head>
+<body>
+<!--[if lte IE 9]>
+<![endif]-->
+
+<header class="am-topbar admin-header">
+  <div class="am-topbar-brand">
+    <strong>了如指掌</strong> <small>商户后台管理端</small>
+  </div>
+
+  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+  <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+
+    <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
+      <li><a href="javascript:;"><span class="am-icon-envelope-o"></span> 收件箱 <span class="am-badge am-badge-warning">5</span></a></li>
+      <li class="am-dropdown" data-am-dropdown>
+        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+          <span class="am-icon-users"></span> 管理员 <span class="am-icon-caret-down"></span>
+        </a>
+        <ul class="am-dropdown-content">
+          <li><a href="#"><span class="am-icon-user"></span> 资料</a></li>
+          <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
+          <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
+        </ul>
+      </li>
+      <li><a href="javascript:;" id="admin-fullscreen"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="am-cf admin-main">
+  <!-- sidebar start -->
+  <div class="admin-sidebar">
+    <ul class="am-nav admin-sidebar-list" id="admin-sidebar">
+    </ul>
+    <ul class="am-nav am-collapse admin-sidebar-list admin-sidebar-sub" id="collapse-nav">
+    </ul>
+    <div class="admin-collapse"><span></span></div>
+  </div>
+  <!-- sidebar end -->
+
+  <!-- content start -->
+  <div class="admin-content">
+    <div class="am-cf am-padding">
+      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">门店管理</strong> / <small>未处理</small></div>
+    </div>
+
+    <div class="am-margin am-cf">
+      <hr/>
+      <p class="am-fl">共 15 条记录</p>
+      <ol class="am-pagination am-fr">
+        <li class="am-disabled"><a href="#">&laquo;</a></li>
+        <li class="am-active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">&raquo;</a></li>
+      </ol>
+    </div>
+
+  </div>
+  <!-- content end -->
+
+</div>
+
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="../module/sea/sea-debug.js"></script>
+
+<script>
+  seajs.config({
+    base:"../module/",
+    alias:{
+      "init":"config2014/init.js",
+      "jquery":"jquery/jquery.js",
+      "amaze":"amaze/amazeui.js"
+    }
+  });
+  seajs.use("main/app");
+</script>
+
+<!--<![endif]-->
+
+</body>
+</html>
