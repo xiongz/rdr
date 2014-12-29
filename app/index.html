@@ -3,84 +3,271 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>了如指掌商户管理端</title>
-  <meta name="description" content="了如指掌">
+  <title>首页</title>
+  <meta name="description" content="人动人">
   <meta name="keywords" content="gallery">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp" />
   <link rel="icon" type="image/png" href="assets/i/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/i/app-icon72x72@2x.png">
-  <meta name="apple-mobile-web-app-title" content="了如指掌" />
+  <meta name="apple-mobile-web-app-title" content="人动人" />
   <link rel="stylesheet" href="../static/css/amazeui.css"/>
-  <link rel="stylesheet" href="../static/css/admin.css">
+  <link rel="stylesheet" href="../static/css/rdr.css">
 
 </head>
 <body>
-<!--[if lte IE 9]>
+<!--[if lte IE 9 ]>
+<div class="am-alert am-alert-danger ie-warning" data-am-alert>
+  <button type="button" class="am-close">&times;</button>
+  <div class="am-container">
+    365 安全卫士提醒：你的浏览器太古董了，妹子无爱，<a
+          href="http://browsehappy.com/" target="_blank">还不速速换一个</a>！</div></div>
 <![endif]-->
 
-<header class="am-topbar admin-header">
-  <div class="am-topbar-brand">
-    <strong>了如指掌</strong> <small>商户后台管理端</small>
-  </div>
+<header class="am-topbar rdr-head">
+  <div class="rdr-w">
+    <!--<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>-->
 
-  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
-
-  <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
-
-    <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
-      <li><a href="javascript:;"><span class="am-icon-envelope-o"></span> 收件箱 <span class="am-badge am-badge-warning">5</span></a></li>
-      <li class="am-dropdown" data-am-dropdown>
-        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
-          <span class="am-icon-users"></span> 管理员 <span class="am-icon-caret-down"></span>
-        </a>
-        <ul class="am-dropdown-content">
-          <li><a href="#"><span class="am-icon-user"></span> 资料</a></li>
-          <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
-          <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
-        </ul>
-      </li>
-      <li><a href="javascript:;" id="admin-fullscreen"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
-    </ul>
-  </div>
+    <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+      <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right rdr-nav-st">
+        <li><a href="#"></span> 登录</a></li>
+        <li><a href="#"></span> 注册</a></li>
+        <li><a href="#"></span> 我的订单</a></li>
+        <li><a href="#"></span> 我的场馆</a></li>
+        <li><a href="#"></span> 手机版<span class="am-margin-left-xs am-icon-qrcode"></span></a></li>
+         <!--<li class="am-dropdown" data-am-dropdown>-->
+          <!--<a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">-->
+             <!--上海 <span class="am-icon-caret-down"></span>-->
+          <!--</a>-->
+          <!--<ul class="am-dropdown-content">-->
+            <!--<li><a href="#"></span> 深圳</a></li>-->
+            <!--<li><a href="#"></span> 北京</a></li>-->
+            <!--<li><a href="#"></span> 广州</a></li>-->
+          <!--</ul>-->
+        <!--</li>-->
+      </ul>
+    </div>
+    </div>
 </header>
-
-<div class="am-cf admin-main">
-  <!-- sidebar start -->
-  <div class="admin-sidebar">
-    <ul class="am-nav admin-sidebar-list" id="admin-sidebar">
-    </ul>
-    <ul class="am-nav am-collapse admin-sidebar-list admin-sidebar-sub" id="collapse-nav">
-    </ul>
-    <div class="admin-collapse"><span></span></div>
+<!-- logo start -->
+<div class="rdr-logo">
+  <div class="rdr-w">
+    <h1 class="am-topbar-brand">
+      <a href="#" class="rdr-text-ir"></a>
+    </h1>
+    <span>即使预订运动场馆</span>
+    <select>
+      <option value="1">上海</option>
+      <option>北京</option>
+      <option>深圳</option>
+    </select>
   </div>
-  <!-- sidebar end -->
+</div>
+<!-- logo end -->
 
-  <!-- content start -->
-  <div class="admin-content">
-    <div class="am-cf am-padding">
-      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">门店管理</strong> / <small>未处理</small></div>
-    </div>
-
-    <div class="am-margin am-cf">
-      <hr/>
-      <p class="am-fl">共 15 条记录</p>
-      <ol class="am-pagination am-fr">
-        <li class="am-disabled"><a href="#">&laquo;</a></li>
-        <li class="am-active"><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">&raquo;</a></li>
-      </ol>
-    </div>
-
+<!-- 导航 start -->
+<div class="am-topbar rdr-nav-2014">
+  <div class="rdr-w">
+      <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-left rdr-nav-st-2014">
+        <li class="am-active"><a href="#"></span> 首页</a></li>
+        <li><a href="#"></span> 场馆</a></li>
+        <li><a href="#"></span> 教练</a></li>
+        <li><a href="#"></span> 运动社区</a></li>
+        <li><a href="#"></span> 同城活动</a></li>
+        <li><a href="#"></span> 培训</a></li>
+      </ul>
   </div>
-  <!-- content end -->
+</div>
+<!-- 导航 end -->
+
+<!-- 轮播 start -->
+<div class="rdr-carousel">
+  <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{}'>
+    <ul class="am-slides">
+      <li>
+        <img src="http://cn.bing.com/az/hprichv/LondonTrainStation_GettyRR_139321755_ZH-CN742316019.jpg">
+      </li>
+      <li>
+        <img src="http://s.cn.bing.net/az/hprichbg/rb/CardinalsBerries_ZH-CN10679090179_1366x768.jpg">
+      </li>
+      <li>
+        <img src="http://s.cn.bing.net/az/hprichbg/rb/QingdaoJiaozhou_ZH-CN10690497202_1366x768.jpg">
+      </li>
+      <li>
+        <img src="http://s.cn.bing.net/az/hprichbg/rb/FennecFox_ZH-CN13720911949_1366x768.jpg">
+      </li>
+    </ul>
+  </div>
 
 </div>
+<!-- 轮播 end -->
+
+<!--搜索 start -->
+<div class="rdr-search">
+  <div style="height:1px;"></div>
+  <div class="rdr-s1 am-radius">
+    <form class="am-form">
+      <fieldset>
+        <div class="am-form-group">
+          <input type="text" class="rdr-s1-txt" id="doc-ipt-email-1" placeholder="场馆  教练....">
+          <button type="button" class="am-btn rdr-btn-s1">快速预订</button>
+        </div>
+        </fieldset>
+      </form>
+  </div>
+  <div class="rdr-sport">
+    <ul class="am-avg-lg-12">
+      <li><a href="javascript:void(0)"><span class="rdr-icon-wq"></span><p>网球</p></a></li>
+      <li><a href="javascript:void(0)"><span class="rdr-icon-ymq"></span><p>羽毛球</p></a></li>
+      <li><a href="javascript:void(0)"><span class="rdr-icon-pbq"></span><p>乒乓球</p></a></li>
+      <li><a href="javascript:void(0)"><span class="rdr-icon-pq"></span><p>排球</p></a></li>
+      <li><a href="javascript:void(0)"><span class="rdr-icon-bq"></span><p>棒球</p></a></li>
+      <li><a href="javascript:void(0)"><span class="rdr-icon-lq"></span><p>篮球</p></a></li>
+      <li><a href="javascript:void(0)"><span class="rdr-icon-zq"></span><p>足球</p></a></li>
+      <li><a href="javascript:void(0)"><span class="rdr-icon-sj"></span><p>射箭</p></a></li>
+      <li><a href="javascript:void(0)"><span class="rdr-icon-hb"></span><p>滑冰</p></a></li>
+      <li><a href="javascript:void(0)"><span class="rdr-icon-yy"></span><p>游泳</p></a></li>
+      <li><a href="javascript:void(0)"><span class="rdr-icon-sji"></span><p>射击</p></a></li>
+      <li><a href="javascript:void(0)"><span class="rdr-icon-py"></span><p>攀岩</p></a></li>
+    </ul>
+  </div>
+</div>
+<!--搜索 end -->
+<!--<h1 class="am-topbar-brand">-->
+<!--<a href="#" class="rdr-text-ir">人动人LOGO</a>-->
+<!--</h1>-->
+  <!-- 场馆预订 start -->
+<div class="rdr-cgyd rdr-w">
+  <div data-am-widget="titlebar" class="am-titlebar am-titlebar-multi">
+    <h2 class="am-titlebar-title">
+      <a href="javaScript:void(0)">场馆预订</a>
+    </h2>
+    <nav class="am-titlebar-nav">
+      <a href="#more" class="">更多</a>
+    </nav>
+  </div>
+  <div class="rdr-grid-online">
+    <ul class="am-avg-sm-2">
+      <li>
+        <div class="rdr-grid-s">
+          <div class="am-fl rdr-cg-desc">
+            <div class="rdr-desc-1"><span class="rdr-cg-name">鸿飞运动城</span><span class="rdr-yd-name">羽毛球</span></div>
+            <div class="rdr-desc-2">宝山区一二八纪念路401号（近虎林路）</div>
+            <div class="rdr-desc-3"><span class="rdr-span-1">停车场</span><span class="rdr-span-2">卖品销售</span><span class="rdr-span-3">器材租借</span></div>
+          </div>
+          <div class="am-fl">
+            <button type="button" class="am-btn rdr-btn-line">在线预订</button>
+          </div>
+        </div>
+      </li>      <li>
+        <div class="rdr-grid-s">
+          <div class="am-fl rdr-cg-desc">
+            <div class="rdr-desc-1"><span class="rdr-cg-name">鸿飞运动城</span><span class="rdr-yd-name">羽毛球</span></div>
+            <div class="rdr-desc-2">宝山区一二八纪念路401号（近虎林路）</div>
+            <div class="rdr-desc-3"><span class="rdr-span-1">停车场</span><span class="rdr-span-2">卖品销售</span><span class="rdr-span-3">器材租借</span></div>
+          </div>
+          <div class="am-fl">
+            <button type="button" class="am-btn rdr-btn-line">在线预订</button>
+          </div>
+        </div>
+      </li>      <li>
+        <div class="rdr-grid-s">
+          <div class="am-fl rdr-cg-desc">
+            <div class="rdr-desc-1"><span class="rdr-cg-name">鸿飞运动城</span><span class="rdr-yd-name">羽毛球</span></div>
+            <div class="rdr-desc-2">宝山区一二八纪念路401号（近虎林路）</div>
+            <div class="rdr-desc-3"><span class="rdr-span-1">停车场</span><span class="rdr-span-2">卖品销售</span><span class="rdr-span-3">器材租借</span></div>
+          </div>
+          <div class="am-fl">
+            <button type="button" class="am-btn rdr-btn-line">在线预订</button>
+          </div>
+        </div>
+      </li>      <li>
+        <div class="rdr-grid-s">
+          <div class="am-fl rdr-cg-desc">
+            <div class="rdr-desc-1"><span class="rdr-cg-name">鸿飞运动城</span><span class="rdr-yd-name">羽毛球</span></div>
+            <div class="rdr-desc-2">宝山区一二八纪念路401号（近虎林路）</div>
+            <div class="rdr-desc-3"><span class="rdr-span-1">停车场</span><span class="rdr-span-2">卖品销售</span><span class="rdr-span-3">器材租借</span></div>
+          </div>
+          <div class="am-fl">
+            <button type="button" class="am-btn rdr-btn-line">在线预订</button>
+          </div>
+        </div>
+      </li>      <li>
+        <div class="rdr-grid-s">
+          <div class="am-fl rdr-cg-desc">
+            <div class="rdr-desc-1"><span class="rdr-cg-name">鸿飞运动城</span><span class="rdr-yd-name">羽毛球</span></div>
+            <div class="rdr-desc-2">宝山区一二八纪念路401号（近虎林路）</div>
+            <div class="rdr-desc-3"><span class="rdr-span-1">停车场</span><span class="rdr-span-2">卖品销售</span><span class="rdr-span-3">器材租借</span></div>
+          </div>
+          <div class="am-fl">
+            <button type="button" class="am-btn rdr-btn-line">在线预订</button>
+          </div>
+        </div>
+      </li>      <li>
+        <div class="rdr-grid-s">
+          <div class="am-fl rdr-cg-desc">
+            <div class="rdr-desc-1"><span class="rdr-cg-name">鸿飞运动城</span><span class="rdr-yd-name">羽毛球</span></div>
+            <div class="rdr-desc-2">宝山区一二八纪念路401号（近虎林路）</div>
+            <div class="rdr-desc-3"><span class="rdr-span-1">停车场</span><span class="rdr-span-2">卖品销售</span><span class="rdr-span-3">器材租借</span></div>
+          </div>
+          <div class="am-fl">
+            <button type="button" class="am-btn rdr-btn-line">在线预订</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+  <!-- 场馆预订 end -->
+
+<!-- 明星教练 start -->
+<div class="rdr-mxjl rdr-w">
+  <div data-am-widget="titlebar" class="am-titlebar am-titlebar-multi">
+    <h2 class="am-titlebar-title">
+      <a href="javaScript:void(0)">明星教练</a>
+    </h2>
+    <nav class="am-titlebar-nav">
+      <a href="#more" class="">更多</a>
+    </nav>
+  </div>
+  <div class="rdr-grid-online">
+    <ul class="am-avg-sm-2">
+      <li><div class="rdr-grid-s">
+
+      </div></li>
+      <li><div class="rdr-grid-s"></div></li>
+      <li><div class="rdr-grid-s"></div></li>
+      <li><div class="rdr-grid-s"></div></li>
+      <li><div class="rdr-grid-s"></div></li>
+    </ul>
+  </div>
+</div>
+<!-- 明星教练 end -->
+
+<!-- 运动社区 start -->
+<div class="rdr-ydsq rdr-w">
+  <div data-am-widget="titlebar" class="am-titlebar am-titlebar-multi">
+    <h2 class="am-titlebar-title">
+      <a href="javaScript:void(0)">运动社区</a>
+    </h2>
+    <nav class="am-titlebar-nav">
+      <a href="#more" class="">更多</a>
+    </nav>
+  </div>
+  <div class="rdr-grid-online">
+    <ul class="am-avg-sm-2">
+      <li><div class="rdr-grid-s">
+
+      </div></li>
+      <li><div class="rdr-grid-s"></div></li>
+      <li><div class="rdr-grid-s"></div></li>
+      <li><div class="rdr-grid-s"></div></li>
+      <li><div class="rdr-grid-s"></div></li>
+    </ul>
+  </div>
+</div>
+<!-- 运动社区 end -->
 
 
 <!--[if (gte IE 9)|!(IE)]><!-->
